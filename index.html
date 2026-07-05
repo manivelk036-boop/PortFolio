@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Manivelkumar S – Frontend Developer & Java Enthusiast. Computer Science student building scalable software solutions. View my projects, skills, and contact me." />
+  <meta name="keywords"
+    content="Manivelkumar S, Frontend Developer, Java Developer, Computer Science, Portfolio, Web Developer, Software Engineer" />
+  <meta name="author" content="Manivelkumar S" />
+  <meta property="og:title" content="Manivelkumar S | Frontend Developer & Software Engineer" />
+  <meta property="og:description" content="Building Software That Solves Real Problems" />
+  <meta property="og:type" content="website" />
+  <title>Manivelkumar S | Frontend Developer &amp; Software Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark-mode">
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <span class="loader-text">&lt;Manivelkumar /&gt;</span>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <span class="logo-bracket">&lt;</span>Manivelkumar<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-image-wrapper reveal-up">
+        <div class="hero-avatar">
+          <div class="avatar-placeholder">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="42" r="26" fill="url(#ag)" />
+              <ellipse cx="60" cy="100" rx="38" ry="22" fill="url(#ag)" />
+              <defs>
+                <linearGradient id="ag" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#8b5cf6" />
+                  <stop offset="100%" stop-color="#06b6d4" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="avatar-ring"></div>
+          <div class="avatar-badge">👨‍💻</div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <div class="hero-greeting reveal-up" style="--delay:0.1s">
+          <span class="greeting-dot"></span> Available for opportunities
+        </div>
+        <h1 class="hero-name reveal-up" style="--delay:0.2s">
+          Hi, I'm <span class="gradient-text">Manivelkumar S</span>
+        </h1>
+        <div class="hero-typing-wrapper reveal-up" style="--delay:0.3s">
+          <span class="typing-static">I'm a </span>
+          <span class="typing-text" id="typing-text"></span><span class="typing-cursor">|</span>
+        </div>
+        <p class="hero-tagline reveal-up" style="--delay:0.4s">Building Software That Solves Real Problems</p>
+        <p class="hero-intro reveal-up" style="--delay:0.5s">
+          A passionate Computer Science student crafting high-performance web experiences and scalable software
+          solutions. I turn complex problems into elegant, user-centric applications.
+        </p>
+        <div class="hero-cta reveal-up" style="--delay:0.6s">
+          <a href="#projects" class="btn btn-primary" id="cta-projects">
+            <span>View Projects</span>
+            <svg viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="resume.pdf" class="btn btn-secondary" id="cta-resume" download>
+            <svg viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>Download Resume</span>
+          </a>
+          <a href="#contact" class="btn btn-ghost" id="cta-contact">Contact Me</a>
+        </div>
+        <div class="hero-stats reveal-up" style="--delay:0.7s">
+          <div class="stat-item">
+            <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="7">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="1">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Year Coding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">A brief introduction to my background, philosophy, and what drives me to build.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <div class="about-card glass-card">
+            <div class="about-icon-row">
+              <div class="about-icon-chip">🎓 CS Student</div>
+              <div class="about-icon-chip">💡 Problem Solver</div>
+              <div class="about-icon-chip">🚀 Builder</div>
+            </div>
+            <p class="about-paragraph">
+              I'm <strong>Manivelkumar S</strong>, a motivated and passionate Computer Science Engineering student with a strong foundation in Java Full Stack Development. My journey in tech started with curiosity about how the web works — and quickly grew into a full-on obsession with building things that solve real-world problems.
+            </p>
+            <p class="about-paragraph">
+              I specialize in <strong>Frontend Development</strong> and <strong>Java Programming</strong>, and I'm
+              always exploring the intersection of elegant design and performant code. Whether it's a sleek UI or a
+              robust backend system, I care about quality at every layer.
+            </p>
+            <p class="about-paragraph">
+              Beyond code, I think like a <strong>startup founder</strong> — I look for inefficiencies, imagine scalable
+              solutions, and prototype fast. I believe the best software is built when engineering meets empathy for the
+              user.
+            </p>
+            <div class="about-values">
+              <div class="value-item">
+                <div class="value-icon">⚡</div>
+                <div><strong>Fast Learner</strong>
+                  <p>I absorb new technologies quickly and apply them effectively.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon">🔍</div>
+                <div><strong>Detail Oriented</strong>
+                  <p>Clean code, pixel-perfect UIs, and thoughtful architecture.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon">🌐</div>
+                <div><strong>Impact Driven</strong>
+                  <p>I build software that creates tangible value for real users.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-highlights reveal-right">
+          <div class="highlight-card glass-card">
+            <div class="highlight-icon">🎯</div>
+            <h3>Current Focus</h3>
+            <p>Frontend Development · Java Programming · System Design · Open Source</p>
+          </div>
+          <div class="highlight-card glass-card">
+            <div class="highlight-icon">🧠</div>
+            <h3>Currently Learning</h3>
+            <p>React.js · Node.js · Data Structures &amp; Algorithms · Cloud Computing</p>
+          </div>
+          <div class="highlight-card glass-card">
+            <div class="highlight-icon">💬</div>
+            <h3>I Love Talking About</h3>
+            <p>Tech Startups · Product Ideas · Web Performance · Clean Architecture</p>
+          </div>
+          <div class="highlight-card glass-card">
+            <div class="highlight-icon">🌍</div>
+            <h3>Goal</h3>
+            <p>To become a full-stack engineer at a high-impact company and eventually found a tech startup.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I use to bring ideas to life.</p>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card glass-card reveal-up" style="--delay:0.05s">
+          <div class="skill-header">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#e44d26,#f16529)">
+              <svg viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
+              </svg>
+            </div>
+            <span class="skill-name">HTML5</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="90"></div>
+          </div>
+          <p class="skill-desc">Semantic markup, accessibility, SEO-friendly structure</p>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" style="--delay:0.1s">
+          <div class="skill-header">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#2965f1,#264de4)">
+              <svg viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" />
+              </svg>
+            </div>
+            <span class="skill-name">CSS3</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="85"></div>
+          </div>
+          <p class="skill-desc">Flexbox, Grid, Animations, Responsive Design</p>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" style="--delay:0.15s">
+          <div class="skill-header">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#f0db4f,#cdb700)">
+              <svg viewBox="0 0 24 24" fill="#111">
+                <path
+                  d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
+              </svg>
+            </div>
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="80"></div>
+          </div>
+          <p class="skill-desc">ES6+, DOM Manipulation, Async/Await, APIs</p>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" style="--delay:0.2s">
+          <div class="skill-header">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#f89820,#e76f00)">
+              <svg viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-.11.491c-4.547 1.195-13.326.676-10.803-.489 2.124-1.002 3.069-.875 3.069-.875M17.116 17.584c4.603-2.396 2.475-4.701.988-4.39-.364.074-.527.138-.527.138s.135-.211.393-.302c2.937-1.033 5.195 3.046-.949 4.662 0-.001.07-.062.095-.108M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.543 1.644-2.469 6.197-3.665 5.19-7.623M9.734 23.924c4.418.283 11.209-.157 11.384-2.247 0 0-.309.793-3.657 1.422-3.789.709-8.46.627-11.228.172 0-.001.567.468 3.501.653" />
+              </svg>
+            </div>
+            <span class="skill-name">Java</span>
+            <span class="skill-percent">78%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="78"></div>
+          </div>
+          <p class="skill-desc">OOP, Collections, Exception Handling, JDBC</p>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" style="--delay:0.25s">
+          <div class="skill-header">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#00758f,#f29111)">
+              <svg viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.062-.14-.018-.04-.04-.08-.06-.112-.02-.033-.046-.06-.14-.04zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.905 0H9.67l-.016-.18c-.21.148-.476.22-.797.22-.64 0-.96-.344-.96-.93 0-.63.33-1.01.985-1.13l.665-.106v-.123c0-.33-.175-.5-.52-.5-.357 0-.607.127-.75.375l-.58-.38c.232-.43.66-.65 1.284-.65.892 0 1.34.428 1.34 1.282v1.12zm-.7-.7v-.3l-.478.08c-.26.04-.39.178-.39.41 0 .21.118.316.353.316.354 0 .515-.17.515-.506zm2.685.786c-.7 0-1.25-.285-1.654-.853l.567-.485c.27.36.575.54.914.54.32 0 .48-.14.48-.42 0-.207-.144-.37-.43-.483l-.526-.195c-.642-.235-.964-.612-.964-1.13 0-.36.126-.646.378-.856.253-.21.568-.315.946-.315.6 0 1.082.24 1.444.72l-.545.51c-.224-.287-.48-.43-.77-.43-.278 0-.417.128-.417.384 0 .19.14.344.42.46l.534.2c.682.255 1.023.65 1.023 1.185 0 .396-.128.707-.383.935-.255.228-.59.343-1.02.343z" />
+              </svg>
+            </div>
+            <span class="skill-name">MySQL</span>
+            <span class="skill-percent">72%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="72"></div>
+          </div>
+          <p class="skill-desc">CRUD, Joins, Stored Procedures, Schema Design</p>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" style="--delay:0.3s">
+          <div class="skill-header">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#f05032,#c1271b)">
+              <svg viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187" />
+              </svg>
+            </div>
+            <span class="skill-name">Git &amp; GitHub</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="75"></div>
+          </div>
+          <p class="skill-desc">Version Control, Branching, Pull Requests</p>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" style="--delay:0.35s">
+          <div class="skill-header">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#8b5cf6,#06b6d4)">
+              <svg viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M21 2H3a1 1 0 00-1 1v14a1 1 0 001 1h18a1 1 0 001-1V3a1 1 0 00-1-1zM3 4h18v12H3V4zM7 22h10v-2H7v2z" />
+              </svg>
+            </div>
+            <span class="skill-name">Responsive Design</span>
+            <span class="skill-percent">88%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="88"></div>
+          </div>
+          <p class="skill-desc">Mobile-first, Cross-browser, Fluid Layouts</p>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" style="--delay:0.4s">
+          <div class="skill-header">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#10b981,#059669)">
+              <svg viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M12 2a10 10 0 110 20A10 10 0 0112 2zm0 2a8 8 0 100 16A8 8 0 0012 4zm1 5h-2v3H8v2h3v3h2v-3h3v-2h-3V9z" />
+              </svg>
+            </div>
+            <span class="skill-name">Problem Solving</span>
+            <span class="skill-percent">82%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="82"></div>
+          </div>
+          <p class="skill-desc">DSA, Logical Thinking, Optimization</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Real-world software solutions that address genuine user problems.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal-up" style="--delay:0.1s">
+          <div class="project-banner" style="background:linear-gradient(135deg,#8b5cf6 0%,#3b82f6 100%)">
+            <div class="project-banner-icon">🚌</div>
+            <div class="project-banner-badge">System Design</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Bus Route Management System</h3>
+            <div class="project-problem-solution">
+              <div class="ps-block problem">
+                <span class="ps-label">⚠️ Problem</span>
+                <p>Managing buses, routes, schedules and passenger information manually led to inefficiencies, errors,
+                  and poor commuter experience.</p>
+              </div>
+              <div class="ps-block solution">
+                <span class="ps-label">✅ Solution</span>
+                <p>A centralized digital platform for route, bus, and passenger management with real-time scheduling and
+                  automated data handling.</p>
+              </div>
+            </div>
+            <div class="project-features">
+              <h4>Key Features</h4>
+              <ul>
+                <li>🗺️ Dynamic route creation &amp; management</li>
+                <li>📅 Real-time schedule tracking</li>
+                <li>👥 Passenger record management</li>
+                <li>📊 Admin dashboard with analytics</li>
+                <li>🔍 Search &amp; filter functionality</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">JDBC</span>
+              <span class="tech-badge">Swing UI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link-btn" id="bus-github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link-btn project-link-demo" id="bus-demo">
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                  <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal-up" style="--delay:0.2s">
+          <div class="project-banner" style="background:linear-gradient(135deg,#06b6d4 0%,#8b5cf6 100%)">
+            <div class="project-banner-icon">🤖</div>
+            <div class="project-banner-badge">AI / Productivity</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">AI Life Admin</h3>
+            <div class="project-problem-solution">
+              <div class="ps-block problem">
+                <span class="ps-label">⚠️ Problem</span>
+                <p>People forget insurance renewals, subscription payments, EMI dates, and critical deadlines — causing
+                  penalties and financial stress.</p>
+              </div>
+              <div class="ps-block solution">
+                <span class="ps-label">✅ Solution</span>
+                <p>An intelligent personal admin assistant that tracks, reminds, and manages all life commitments with
+                  smart notification logic.</p>
+              </div>
+            </div>
+            <div class="project-features">
+              <h4>Key Features</h4>
+              <ul>
+                <li>⏰ Smart deadline reminders</li>
+                <li>💳 Subscription &amp; EMI tracker</li>
+                <li>📱 Multi-channel notifications</li>
+                <li>📈 Financial calendar view</li>
+                <li>🔒 Secure personal data vault</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">HTML/CSS</span>
+              <span class="tech-badge">LocalStorage</span>
+              <span class="tech-badge">Notifications API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link-btn" id="ai-github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link-btn project-link-demo" id="ai-demo">
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                  <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card reveal-up" style="--delay:0.3s">
+          <div class="project-banner" style="background:linear-gradient(135deg,#10b981 0%,#3b82f6 100%)">
+            <div class="project-banner-icon">💊</div>
+            <div class="project-banner-badge">Health Tech</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Fake Medicine Detector</h3>
+            <div class="project-problem-solution">
+              <div class="ps-block problem">
+                <span class="ps-label">⚠️ Problem</span>
+                <p>Counterfeit medicines are a global health crisis — dangerous fake drugs reach consumers, causing harm
+                  due to lack of verification tools.</p>
+              </div>
+              <div class="ps-block solution">
+                <span class="ps-label">✅ Solution</span>
+                <p>A technology-based medicine verification platform that allows consumers and pharmacists to
+                  authenticate medicines using unique identifiers.</p>
+              </div>
+            </div>
+            <div class="project-features">
+              <h4>Key Features</h4>
+              <ul>
+                <li>🔎 Barcode / batch number verification</li>
+                <li>🏭 Manufacturer authenticity check</li>
+                <li>📋 Medicine database lookup</li>
+                <li>🚨 Counterfeit alert system</li>
+                <li>📱 Mobile-friendly interface</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">HTML/CSS</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link-btn" id="med-github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link-btn project-link-demo" id="med-demo">
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                  <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Experience &amp; <span class="gradient-text">Achievements</span></h2>
+        <p class="section-subtitle">The milestones, certifications, and learning path that define my growth.</p>
+      </div>
+      <div class="experience-grid">
+        <div class="timeline reveal-left">
+          <h3 class="exp-col-title">📈 Learning Journey</h3>
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <span class="timeline-date">2024 – Present</span>
+                <h4>Computer Science Degree</h4>
+                <p>Pursuing B.Sc./B.Tech in Computer Science with focus on software engineering, algorithms, and systems
+                  programming.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <span class="timeline-date">2024</span>
+                <h4>Frontend Development Deep Dive</h4>
+                <p>Mastered HTML5, CSS3, and JavaScript through hands-on project building. Built responsive, accessible
+                  web applications.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <span class="timeline-date">2024</span>
+                <h4>Java Programming &amp; OOP</h4>
+                <p>Developed proficiency in Java, building real-world applications including the Bus Route Management
+                  System using JDBC and MySQL.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot active"></div>
+              <div class="timeline-content glass-card active">
+                <span class="timeline-date">2025 – Present</span>
+                <h4>Advanced Projects &amp; Open Source</h4>
+                <p>Building AI-powered productivity tools, health-tech solutions, and exploring React.js and Node.js.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="certs-internships reveal-right">
+          <h3 class="exp-col-title">💼 Internship</h3>
+          <div class="internship-card glass-card">
+            <div class="internship-icon">🏢</div>
+            <div class="internship-info">
+              <h4>Software Development Intern</h4>
+              <span class="internship-company">Seeking Opportunities</span>
+              <p class="internship-desc">Actively looking for internship opportunities in frontend development, Java
+                development, or full-stack engineering. Open to both remote and on-site roles.</p>
+              <a href="#contact" class="btn btn-small btn-primary">Hire Me as Intern →</a>
+            </div>
+          </div>
+          <h3 class="exp-col-title" style="margin-top:2rem">🏆 Certifications</h3>
+          <div class="certs-grid">
+            <div class="cert-card glass-card">
+              <div class="cert-icon">🌐</div>
+              <div class="cert-info">
+                <h4>Web Development Fundamentals</h4><span>HTML, CSS, JavaScript</span>
+              </div>
+              <div class="cert-badge">✓</div>
+            </div>
+            <div class="cert-card glass-card">
+              <div class="cert-icon">☕</div>
+              <div class="cert-info">
+                <h4>Java Programming</h4><span>Core Java &amp; OOP Principles</span>
+              </div>
+              <div class="cert-badge">✓</div>
+            </div>
+            <div class="cert-card glass-card">
+              <div class="cert-icon">🗄️</div>
+              <div class="cert-info">
+                <h4>Database Management</h4><span>MySQL &amp; SQL Fundamentals</span>
+              </div>
+              <div class="cert-badge">✓</div>
+            </div>
+            <div class="cert-card glass-card">
+              <div class="cert-icon">🔧</div>
+              <div class="cert-info">
+                <h4>Git &amp; Version Control</h4><span>GitHub Workflow &amp; Collaboration</span>
+              </div>
+              <div class="cert-badge">✓</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">My CV</span>
+        <h2 class="section-title">Download My <span class="gradient-text">Resume</span></h2>
+        <p class="section-subtitle">A comprehensive overview of my skills, projects, and academic background.</p>
+      </div>
+      <div class="resume-container reveal-up">
+        <div class="resume-card glass-card">
+          <div class="resume-preview">
+            <div class="resume-page">
+              <div class="rp-header">
+                <div class="rp-name">Manivelkumar S</div>
+                <div class="rp-title">Frontend Developer &amp; Java Enthusiast</div>
+                <div class="rp-contact-row">
+                  <span>📧 manivelk036@gmail.com</span>
+                  <span>🔗 linkedin.com/in/manivelkumar-s-143a89324</span>
+                  <span>💻 github.com/manivelk036-boop</span>
+                </div>
+              </div>
+              <div class="rp-body">
+                <div class="rp-section">
+                  <div class="rp-section-title">SKILLS</div>
+                  <div class="rp-line full"></div>
+                  <div class="rp-line mid"></div>
+                  <div class="rp-line short"></div>
+                </div>
+                <div class="rp-section">
+                  <div class="rp-section-title">PROJECTS</div>
+                  <div class="rp-line full"></div>
+                  <div class="rp-line long"></div>
+                  <div class="rp-line mid"></div>
+                </div>
+                <div class="rp-section">
+                  <div class="rp-section-title">EDUCATION</div>
+                  <div class="rp-line full"></div>
+                  <div class="rp-line mid"></div>
+                </div>
+              </div>
+            </div>
+            <div class="resume-glow"></div>
+          </div>
+          <div class="resume-info">
+            <h3>Mani's Resume</h3>
+            <p>My resume includes a complete breakdown of my technical skills, featured projects, educational
+              background, and internship experiences. Updated regularly with my latest work.</p>
+            <ul class="resume-highlights">
+              <li>✅ Frontend &amp; Java Development Skills</li>
+              <li>✅ 3 Real-World Project Descriptions</li>
+              <li>✅ Academic Achievements</li>
+              <li>✅ Certifications</li>
+              <li>✅ Contact Information</li>
+            </ul>
+            <a href="resume.pdf" class="btn btn-primary btn-large" id="download-resume" download>
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+              Download Resume (PDF)
+            </a>
+            <p class="resume-note">PDF format · Last updated June 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-subtitle">Whether it's a job opportunity, collaboration, or just a hello — I'd love to hear
+          from you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-social-cards">
+            <a href="mailto:manivelk036@gmail.com" class="contact-card glass-card" id="contact-email">
+              <div class="contact-card-icon" style="background:linear-gradient(135deg,#ef4444,#dc2626)">
+                <svg viewBox="0 0 24 24" fill="white">
+                  <path
+                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">manivelk036@gmail.com</span>
+              </div>
+              <svg class="contact-card-arrow" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/manivelkumar-s-143a89324/" target="_blank" rel="noopener"
+              class="contact-card glass-card" id="contact-linkedin">
+              <div class="contact-card-icon" style="background:linear-gradient(135deg,#0a66c2,#0052a3)">
+                <svg viewBox="0 0 24 24" fill="white">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-value">linkedin.com/in/manivelkumar-s-143a89324</span>
+              </div>
+              <svg class="contact-card-arrow" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+              </svg>
+            </a>
+            <a href="https://github.com/manivelk036-boop" target="_blank" rel="noopener" class="contact-card glass-card"
+              id="contact-github">
+              <div class="contact-card-icon" style="background:linear-gradient(135deg,#444,#222)">
+                <svg viewBox="0 0 24 24" fill="white">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-value">github.com/manivelk036-boop</span>
+              </div>
+              <svg class="contact-card-arrow" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal-right">
+          <form class="contact-form glass-card" id="contact-form" novalidate>
+            <h3>Send a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-name">Your Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Email Address</label>
+                <input type="email" id="cf-email" name="email" placeholder="john@company.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" name="subject"
+                placeholder="Internship Opportunity / Collaboration / Hello" />
+            </div>
+            <div class="form-group">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5"
+                placeholder="Tell me about the opportunity or what you'd like to discuss..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+              Send Message
+            </button>
+            <div class="form-success" id="form-success">
+              <span>🎉</span> Message sent! I'll get back to you within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo"><span class="logo-bracket">&lt;</span>Manivelkumar<span
+              class="logo-bracket">/&gt;</span></a>
+          <p>Frontend Developer &amp; Java Enthusiast<br />Building Software That Solves Real Problems</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a><a href="#skills">Skills</a>
+          <a href="#projects">Projects</a><a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/manivelk036-boop" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon"
+            id="footer-github">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/manivelkumar-s-143a89324/" target="_blank" rel="noopener" aria-label="LinkedIn"
+            class="social-icon" id="footer-linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="mailto:manivelk036@gmail.com" aria-label="Email" class="social-icon" id="footer-email">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Manivelkumar S. Crafted with ❤️ and lots of ☕</p>
+        <p class="footer-note">Open to internships &amp; full-time opportunities</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd"
+        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+        clip-rule="evenodd" />
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
